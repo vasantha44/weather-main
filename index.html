@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var n = 9474, sum = 0,check = n,arm = 0 , power = 0                         //armstong number
+        var len = n.toString().length                                               //153 9474
+        while(n>0)
+        {
+           arm =  n%10
+           power = Math.pow(arm,len)
+           sum = sum+power
+           n = parseInt(n/10) 
+        }
+        if (check==sum)
+        {
+            document.write(`given number is armstrong<br>`)
+        }
+        else{
+            document.write(`given number is not a armstrong<br>`)
+        }
+
+    </script>
+</body>
+</html>
